@@ -140,11 +140,13 @@ public:
         mhi_ac_ctrl_core.init();
         mhi_ac_ctrl_core.set_frame_size(frame_size_); // set framesize. Only 20 (legacy) or 33 (includes 3D auto and vertical vanes) possible
 
-        }
+    }
     void set_frame_size(int framesize) {
         frame_size_ = framesize;
-
-        }
+    }
+    void set_temperature_step(int stepsize) {
+        temperature_step_ = stepsize;
+    }
     void set_room_temp_api_timeout(int time_in_seconds) {
         room_temp_api_timeout = time_in_seconds;
     }
