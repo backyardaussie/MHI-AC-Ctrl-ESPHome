@@ -144,9 +144,6 @@ public:
     void set_frame_size(int framesize) {
         frame_size_ = framesize;
     }
-    void set_temperature_step(int stepsize) {
-        temperature_step_ = stepsize;
-    }
     void set_room_temp_api_timeout(int time_in_seconds) {
         room_temp_api_timeout = time_in_seconds;
     }
@@ -680,7 +677,7 @@ protected:
 
     float minimum_temperature_ { 18.0f };
     float maximum_temperature_ { 30.0f };
-    float temperature_step_ { 0.5f };
+    float temperature_step_ { 1.0f };
 
     ACPower power_;
     ACMode mode_;
