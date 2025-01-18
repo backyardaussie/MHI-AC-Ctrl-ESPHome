@@ -677,7 +677,7 @@ protected:
 
     float minimum_temperature_ { 18.0f };
     float maximum_temperature_ { 30.0f };
-    float temperature_step_ { 1.0f };
+    float temperature_step_ { 0.5f };
 
     ACPower power_;
     ACMode mode_;
